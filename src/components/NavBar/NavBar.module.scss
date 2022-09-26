@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables.scss';
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+
+  @media (max-width: $mediumBP) {
+    display: none;
+  }
+}
+
+.navBar a {
+  cursor: pointer;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.link {
+  color: $mainGreen;
+  text-decoration: none;
+}
