@@ -8,10 +8,10 @@
 }
 
 .sideNav {
-  height: calc(100vh - 80px); /* 100% Full-height */
-  width: 0%; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  height: calc(100vh - 80px); 
+  width: 0%; 
+  position: fixed; 
+  z-index: 100; 
   top: 80px; 
   right: 0;
   background-color: rgb(255, 255, 255);

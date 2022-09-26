@@ -1,10 +1,13 @@
+import HPBanner from '../../components/HPBanner/HPBanner';
+import HPInfoBlock from '../../components/HPInfoBlock/HPInfoBlock';
+
 import s from './HomePage.module.scss';
 
 const HomePage = () => {
   return (
     <div className={s.wrapper}>
-      <div>HomePgBanner</div>
-      <div>Company info Block</div>
+      <HPBanner />
+      <HPInfoBlock />
       <div>CodescApp + banner</div>
       <div>Two half text #1</div>
       <div>Slider</div>
