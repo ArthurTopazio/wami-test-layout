@@ -19,20 +19,3 @@
   justify-content: space-between;
   color: #042825;
 };
-
-.label {
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
-  color: $mainYellow;
-  cursor: pointer;
-}
-
-.burgerMenu {
-  display: none;
-  @media (max-width: $mediumBP) {
-    display: block;
-  }
-}

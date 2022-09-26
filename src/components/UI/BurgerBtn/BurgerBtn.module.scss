@@ -1,0 +1,57 @@
+.navToggle {
+  position: relative;
+  padding: 1px;
+  background: transparent;
+  border: 1px solid transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: (-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.navToggle:focus {
+  outline-width: 0;
+}
+
+.barTop,.barMid, .barBot {
+  background: #E8AD1A;
+  display: block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .2s ease all;
+          transition: .2s ease all;
+  
+  border-radius: 4px;
+  height: 3px;
+  width: 35px;
+  margin-bottom: 6px;
+  
+  /*
+   * Practical values:
+   * border-radius: 2px;
+   * height: 2px;
+   * width: 25px;
+   * margin-bottom: 4px;
+  */
+}
+
+.navToggle .barBot {
+  margin-bottom: 0;
+}
+
+.opened {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+          transform-origin: 15% 15%;
+}
+.opened1 {
+  opacity: 0;
+}
+.opened2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+          transform-origin: 15% 95%;
+}

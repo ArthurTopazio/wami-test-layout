@@ -1,12 +1,12 @@
+import { FC } from 'react';
+
 import Header from './components/Header/Header';
 import AppRouter from './components/AppRouter';
-
-import './App.scss';
 import Footer from './components/Footer';
 
-const App = () => {
+const App: FC = () => {
   return (
-    <div className="App">
+    <div>
       <Header />
       <AppRouter />
       <Footer />
