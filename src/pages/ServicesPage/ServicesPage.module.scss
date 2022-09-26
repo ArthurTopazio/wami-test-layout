@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables.scss';
+
+.wrapper {
+  padding: $pagePadding;
+  min-height: $pageHeight;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
