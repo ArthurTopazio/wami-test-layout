@@ -14,6 +14,7 @@ const Header: FC = () => {
           <a>About us</a>
           <a>Contacts</a>
           <a>Start project</a>
+          <div className={s.burgerMenu}>X</div>
         </div>
       </div>
     </div>

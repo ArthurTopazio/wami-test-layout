@@ -11,7 +11,7 @@
 };
 
 .headerItems {
-  width: 85%;
+  width: $boxWidth;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,4 +40,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 150%
+}
+
+.burgerMenu {
+  display: none;
 }
