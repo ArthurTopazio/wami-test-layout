@@ -3,5 +3,92 @@
 .wrapper {
   background-color: $mainGreen;
   width: 100%;
+  padding-top: 65px;
+  padding-bottom: 80px;
   color: #ffffff;
+
+  @media (max-width: $mediumBP) {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+}
+
+.box {
+  width: $boxWidth;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxItems {
+  margin-top: 15px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.boxItemsHead {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.symbol {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+  font-size: 24px;
+  color: $mainYellow; 
+}
+
+.subText {
+  padding-left: 23px;
+  padding-top: 25px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.stackItems {
+  padding-left: 23px;
+  padding-top: 25px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.stackItem {
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.btn {
+  margin-left: 23px;
+  margin-top: 15px;
+  width: 173px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $mainGreen;
+  cursor: pointer;
 }

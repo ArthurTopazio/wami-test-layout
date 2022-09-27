@@ -1,0 +1,73 @@
+@import '../../assets/styles/variables.scss';
+
+.wrapper {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $mediumBP) {
+    min-height: 500px;
+  }
+}
+
+.box {
+  width: $boxWidth;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10vw;
+
+  @media (max-width: $mediumBP) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.boxItem1 {
+  width: 210px;
+  min-height: 115px;
+  padding: 14px 40px;
+  background-color: $mainYellow;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $mediumBP) {
+    width: calc(100% - 15px);
+    min-height: 130px;
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+
+.boxItem1 p {
+  margin: 0;
+}
+
+.boxItem2 {
+  color: $mainGreen;
+}
+
+.boxItem2_1 {
+  margin-bottom: 18px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  
+}
+
+.boxItem2_2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
