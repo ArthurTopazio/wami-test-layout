@@ -1,0 +1,90 @@
+@import '../../assets/styles/variables.scss';
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: $boxWidth;
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+
+  @media (max-width: $mediumBP) {
+    flex-direction: column;
+  }
+}
+
+.boxItem1 {
+  text-align: end;
+  @media (max-width: $mediumBP) {
+    text-align: start;
+  }
+}
+
+.boxItem2 {
+  margin-top: 300px;
+  
+  @media (max-width: $mediumBP) {
+    margin-top: 15px;
+  }
+}
+
+.headerText {
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: $mainGreen;
+}
+
+.line {
+  margin-top: 40px;
+  border-left: 1px solid $mainGreen;
+  height: 280px;
+  
+  @media (max-width: $mediumBP) {
+    margin-top: 10px;
+    margin-left: 50%;
+    height: 150px;
+  }
+}
+
+.circle1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $mainGreen;
+  position: relative;
+  right: 5.6px;
+  z-index: 1;
+}
+
+.circle2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $mainYellow;
+  position: relative;
+  right: 12.6px;
+  top: 255px;
+  @media (max-width: $mediumBP) {
+    top: 125px;
+  }
+}
+
+.bodyText {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $mainGreen;
+}

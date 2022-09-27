@@ -3,9 +3,10 @@
 .navBar {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 44px;
 
-  @media (max-width: $mediumBP) {
+  @media (max-width: $largeBP) {
     display: none;
   }
 }
@@ -22,4 +23,16 @@
 .link {
   color: $mainGreen;
   text-decoration: none;
+  transition: .2s;
+}
+
+.link:hover {
+  text-shadow: -8px 6px 6px $mainYellow;
+}
+
+.btn {
+  padding: 12px 38px;
+  cursor: pointer;
+  background-color: $mainYellow;
+  border-radius: 25px;
 }

@@ -1,8 +1,10 @@
 import HPBanner from '../../components/HPBanner/HPBanner';
 import HPCodesc from '../../components/HPCodesc/HPCodesc';
 import HPInfoBlock from '../../components/HPInfoBlock/HPInfoBlock';
-import handPhone from '../../assets/media/handPhone.png';
+import HPTwoHalfTxt from '../../components/HPTwoHalfTxt.tsx/HPTwoHalfTxt';
+import { textHP } from '../../utils/consts/textHP';
 
+import handPhone from '../../assets/media/handPhone.png';
 import s from './HomePage.module.scss';
 
 const HomePage = () => {
@@ -12,11 +14,11 @@ const HomePage = () => {
       <HPInfoBlock />
       <HPCodesc />
       <img src={handPhone} alt="img" />
-      <div>Two half text #1</div>
+      <HPTwoHalfTxt {...textHP[0]} />
       <img src={handPhone} alt="slider" />
-      <div>Two half text #1</div>
-      <div>Other projects</div>
-      <div>Finish line</div>
+      <HPTwoHalfTxt {...textHP[1]} />
+      {/* <div>Other projects</div>
+      <div>Finish line</div> */}
     </div>
   )
 }

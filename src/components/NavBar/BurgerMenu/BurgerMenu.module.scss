@@ -2,7 +2,7 @@
 
 .burgerMenu {
   display: none;
-  @media (max-width: $mediumBP) {
+  @media (max-width:  $largeBP) {
     display: block;
   }
 }
@@ -44,4 +44,16 @@
 .link {
   color: $mainGreen;
   text-decoration: none;
+}
+
+.link:hover {
+  text-shadow: -8px 6px 6px $mainYellow;
+}
+
+
+.btn {
+  padding: 12px 38px;
+  cursor: pointer;
+  background-color: $mainYellow;
+  border-radius: 35px;
 }
