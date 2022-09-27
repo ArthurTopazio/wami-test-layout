@@ -6,6 +6,7 @@ import { textHP } from '../../utils/consts/textHP';
 
 import handPhone from '../../assets/media/handPhone.png';
 import s from './HomePage.module.scss';
+import LoadableImage from '../../components/LoadableImage/LoadableImage';
 
 const HomePage = () => {
   return (
@@ -13,9 +14,9 @@ const HomePage = () => {
       <HPBanner />
       <HPInfoBlock />
       <HPCodesc />
-      <img src={handPhone} alt="img" />
+      <LoadableImage src={handPhone} />
       <HPTwoHalfTxt {...textHP[0]} />
-      <img src={handPhone} alt="slider" />
+      <LoadableImage src={handPhone} />
       <HPTwoHalfTxt {...textHP[1]} />
       {/* <div>Other projects</div>
       <div>Finish line</div> */}
